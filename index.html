@@ -5,12 +5,19 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <meta name="author" content="Łukasz Jachym">
+  <meta name="description" content="not so random ramblings">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+    <title>Learning and making and sharing - Łukasz Jachym</title>
   
+
+
+  
+  <meta name="description" content="A blog about culture, technology, and interesting things.">
+  
+
+
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -19,32 +26,59 @@
 
   
   <link rel="canonical" href="http://b1r3k.github.io">
-  <link href="/favicon.png" rel="icon">
+  <link href="/favicon.ico" rel="icon">
+  <script type="text/javascript" src="http://use.typekit.com/zcp2xbp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="not so random ramblings" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-44073831-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
-  
-    <h2>A blogging framework for hackers.</h2>
-  
-</hgroup>
 
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+<body   >
+
+	<div class="container">
+
+		<div class="four columns">
+  			<nav role="navigation"><ul class="title">
+  <li class="avatar">
+      <img src="/images/lukasz.jpeg" style="border-radius: 50%;" alt="Łukasz Jachym" height="100" width="100">
+  </li>
+  <li><a href="/">Łukasz Jachym</a></li>
+  <li>Software engineer</li>
+  <li>
+      <a target="_blank" href="http://pl.linkedin.com/pub/lukasz-jachym/2a/429/b81/"><img src="/images/linkedin.png" alt="Łukasz Jachym @ linkedin" height="25" width="25"></a>
+      <a target="_blank" href="https://twitter.com/ljachym"><img src="/images/twitter.png" alt="Łukasz Jachym @ twitter" height="25" width="25"></a>
+      <a target="_blank" href="https://github.com/b1r3k"><img src="/images/github.png" alt="Łukasz Jachym @ github" height="25" width="25"></a>
+      <a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS"><img src="/images/rss-social.png" alt="Łukasz Jachym @ rss" height="25" width="25"></a>
+  </li>
+</ul>
+
+<ul class="main-navigation">
+</ul>
+
+<ul class="subscription" data-subscription="rss">
   
 </ul>
   
@@ -55,48 +89,118 @@
   </fieldset>
 </form>
   
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
+
+
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
+        <aside class="sidebar">
+          
+            
+<section>
+  <h1 class="pinboard">Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
   </ul>
+  
+  <a href="https://github.com/b1r3k">@b1r3k</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'b1r3k',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
-
-
-
+<section id="twitter">
+  <h1 class="tweets">Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("ljachym", , );
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
   
-</aside>
+    <p>Follow <a href="http://twitter.com/ljachym">@ljachym</a></p>
+  
+</section>
 
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Your Name -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+
+          
+
+        </aside>    
+  	</div>
+    
+    
+
+    <header class="twelve columns" role="banner">
+    
+<hgroup>
+  <h1>not so random ramblings</h1>
+</hgroup>
+
+    </header>
+
+    
+
+  	<div id="main" class="twelve columns">
+	    <div id="content">
+	      <div id="blog-archives">
+
+
+<article>
+  
+
+
+  <time datetime="2011-06-01T14:44:00+02:00" pubdate><span class='month'>Jun</span> <span class='day'>01</span> <span class='year'>2011</span></time>
+&nbsp;
+  <h1><a href="/blog/2011/06/01/this-is-a-test/">This is post</a></h1>
+
+
+</article>
+
+</div>
+	    </div>
+  	</div>
+  
+  <footer role="contentinfo"  class="sixteen columns"><center>
+<p class="credit">
+  <span class="credit">Powered by <a href="http://github.com">GitHub</a>, <a href="https://github.com/imathis/octopress">Octopress</a>, &amp; <a href="https://github.com/dhgamache/Skeleton">Skeleton</a></span>.
 </p>
-
+</center>
 </footer>
   
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'b1r3k-githubio';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
@@ -109,7 +213,7 @@
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>
@@ -118,5 +222,16 @@
 
 
 
+
+<script>
+  jQuery.noConflict()('li.other').hover (
+    function () {
+    jQuery.noConflict()(this).toggleClass("current-menu-item")
+  });
+</script>
+
 </body>
 </html>
+
+
+	</div> <!-- container -->
